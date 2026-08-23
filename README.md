@@ -25,43 +25,15 @@ pip install -r requirements.txt
 huggingface-cli login   # required for SD3 / FLUX.1-dev weights
 ```
 
-## Reproducing Figure 1
+## Usage
 
-This repository releases the EDR method and the per-edit configurations of Figure 1.
-
-```bash
-python edit.py --config configs/fig1/bear_moose.yaml
-```
-
-| Edit | Backbone | Config |
-|---|---|---|
-| Woman and baby goat → puppy | FLUX | `configs/fig1/woman_puppy.yaml` |
-| Statue → photorealistic | FLUX | `configs/fig1/statue_photoreal.yaml` |
-| Bear → moose | FLUX | `configs/fig1/bear_moose.yaml` |
-| Empire State → Eiffel Tower | FLUX | `configs/fig1/empire_eiffel.yaml` |
-| OPEN → HOME | SD3 | `configs/fig1/open_home.yaml` |
-| Cheetahs → tigers | SD3 | `configs/fig1/cheetahs_tigers.yaml` |
-| Heirloom tomatoes → golf balls | SD3 | `configs/fig1/tomatoes_golf.yaml` |
-| Yellow van → army jeep | SD3 | `configs/fig1/van_jeep.yaml` |
-
-Each config specifies the source image, prompts, and the hyperparameters used for that edit.
-
-## Hyperparameters
-
-All values can be set in a config or overridden on the command line:
+All settings are read from a config file:
 
 ```bash
-python edit.py --config configs/fig1/bear_moose.yaml --t0 0.85 --gamma 4
+python edit.py --config configs/examples.yaml --edit bear_moose
 ```
 
-| Argument | Meaning | Paper default |
-|---|---|---|
-| `--t0` | editing strength (start of trajectory) | 0.9 (FLUX) / [ ] (SD3) |
-| `--gamma` | decay rate of the projection weight | 5 (FLUX) / 2 (SD3) |
-| `--sigma` | Gaussian smoothing std (kernel 6σ) | 5 |
-| `--i_min --i_max` | intensity bounds of the degradation | 0.25, 0.75 |
-| `--steps` | total timesteps | [ ] |
-| `--seed` | random seed | [ ] |
+`configs/examples.yaml` specifies the edits shown in Figure 1. To edit your own image, copy an entry and set the image path, source and target prompts, and the backbone.
 
 ## Demo
 
@@ -69,7 +41,7 @@ python edit.py --config configs/fig1/bear_moose.yaml --t0 0.85 --gamma 4
 python demo.py
 ```
 
-Launches a local Gradio interface: upload an image, enter source and target prompts, adjust hyperparameters, edit.
+Launches a local Gradio interface.
 
 ## Watermarking and use
 
