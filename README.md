@@ -4,52 +4,23 @@
 
 *Transactions on Machine Learning Research (TMLR), 2026* · [OpenReview](https://openreview.net/forum?id=U2fY7u10QY)
 
+> **Status: code release in preparation.** This page will be updated with the implementation, the Figure 1 edits, and a demo. Watch the repository to be notified.
+
 <p align="center"><img src="assets/fig1.jpg" width="95%"></p>
 
 ## Abstract
 
 Rectified flow and diffusion-based models currently represent the state-of-the-art in image editing. Despite their impressive capabilities, maintaining faithfulness to the source image — preserving structure and photometric characteristics while satisfying a target prompt — remains a persistent challenge. We propose an optimization- and inversion-free editing framework for rectified flow models (SD3, FLUX.1-dev) that constrains editing trajectories by projecting them onto a degraded representation, suppressing unfaithful trajectory deviations while preserving the flexibility required to satisfy the target prompt.
 
-## Method
+## Key insight
 
 <p align="center"><img src="assets/fig2.jpg" width="85%"></p>
 
 The editing trajectory is projected onto a degraded representation of its own recent motion, obtained by Gaussian structural smoothing and dynamic range reduction. Directions suppressed by this representation are attenuated with a weight that decays along the trajectory. See Section 3 of the paper.
 
-## Installation
-
-```bash
-git clone https://github.com/shahin-hakemi/EDR.git
-cd EDR
-pip install -r requirements.txt
-huggingface-cli login   # required for SD3 / FLUX.1-dev weights
-```
-
-## Usage
-
-Run one of the edits shown in Figure 1:
-
-```bash
-python edit.py --edit bear_moose
-```
-
-Edit your own image:
-
-```bash
-python edit.py --model sd3 --image path/to/image.jpg --source "a cat on a rock" --target "a tiger on a rock"
-```
-
-## Demo
-
-```bash
-python demo.py
-```
-
-Launches a local Gradio interface.
-
 ## Watermarking and use
 
-Every output is embedded with an invisible blind watermark by default (Zhang et al., 2019; evaluated in Appendix F of the paper). Disable with `--no-watermark`. Use of this software must comply with the acceptable-use policies of the underlying models (Stability AI Community License; FLUX.1-dev Non-Commercial License), which prohibit deceptive manipulation of real individuals. Do not use it to fabricate events, misrepresent identifiable people, or produce non-consensual edits.
+The released code embeds an invisible blind watermark in every output by default (Zhang et al., 2019; evaluated in Appendix F of the paper). Use of this software must comply with the acceptable-use policies of the underlying models (Stability AI Community License; FLUX.1-dev Non-Commercial License), which prohibit deceptive manipulation of real individuals. Do not use it to fabricate events, misrepresent identifiable people, or produce non-consensual edits.
 
 ## License
 
