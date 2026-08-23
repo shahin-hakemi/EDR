@@ -4,27 +4,14 @@
 
 *Transactions on Machine Learning Research (TMLR), 2026* · [OpenReview](https://openreview.net/forum?id=U2fY7u10QY)
 
-> **Status: code release in preparation.** This page will be updated with the implementation, the Figure 1 edits, and a demo. Watch the repository to be notified.
+---
 
-<p align="center"><img src="assets/fig1.jpg" width="95%"></p>
+## Under construction
 
-## Abstract
+This repository is being prepared. The paper page, implementation, and a demo
+will appear here. **Watch** the repository to be notified.
 
-Rectified flow and diffusion-based models currently represent the state-of-the-art in image editing. Despite their impressive capabilities, maintaining faithfulness to the source image — preserving structure and photometric characteristics while satisfying a target prompt — remains a persistent challenge. We propose an optimization- and inversion-free editing framework for rectified flow models (SD3, FLUX.1-dev) that constrains editing trajectories by projecting them onto a degraded representation, suppressing unfaithful trajectory deviations while preserving the flexibility required to satisfy the target prompt.
-
-## Key insight
-
-<p align="center"><img src="assets/fig2.jpg" width="85%"></p>
-
-The editing trajectory is projected onto a degraded representation of its own recent motion, obtained by Gaussian structural smoothing and dynamic range reduction. Directions suppressed by this representation are attenuated with a weight that decays along the trajectory. See Section 3 of the paper.
-
-## Watermarking and use
-
-The released code embeds an invisible blind watermark in every output by default (Zhang et al., 2019; evaluated in Appendix F of the paper). Use of this software must comply with the acceptable-use policies of the underlying models (Stability AI Community License; FLUX.1-dev Non-Commercial License), which prohibit deceptive manipulation of real individuals. Do not use it to fabricate events, misrepresent identifiable people, or produce non-consensual edits.
-
-## License
-
-Code: MIT. Model weights are not distributed here and are governed by their own licenses.
+---
 
 ## Citation
 
@@ -37,3 +24,4 @@ Code: MIT. Model weights are not distributed here and are governed by their own 
   year    = {2026},
   url     = {https://openreview.net/forum?id=U2fY7u10QY}
 }
+```
