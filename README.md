@@ -27,13 +27,17 @@ huggingface-cli login   # required for SD3 / FLUX.1-dev weights
 
 ## Usage
 
-All settings are read from a config file:
+Run one of the edits shown in Figure 1:
 
 ```bash
-python edit.py --config configs/examples.yaml --edit bear_moose
+python edit.py --edit bear_moose
 ```
 
-`configs/examples.yaml` specifies the edits shown in Figure 1. To edit your own image, copy an entry and set the image path, source and target prompts, and the backbone.
+Edit your own image:
+
+```bash
+python edit.py --model sd3 --image path/to/image.jpg --source "a cat on a rock" --target "a tiger on a rock"
+```
 
 ## Demo
 
