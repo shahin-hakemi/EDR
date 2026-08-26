@@ -12,7 +12,7 @@ Rectified flow and diffusion-based models currently represent the state-of-the-a
 
 ## Key insight
 
-<p align="center"><img src="assets/fig2.jpg" width="85%"></p>
+<p align="center"><img src="assets/fig2.PNG" width="85%"></p>
 
 The editing trajectory is projected onto a degraded representation of its own recent motion, obtained by Gaussian structural smoothing and dynamic range reduction. Directions suppressed by this representation are attenuated with a weight that decays along the trajectory. See Section 3 of the paper.
 
