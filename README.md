@@ -4,7 +4,7 @@
 
 *Transactions on Machine Learning Research (TMLR), 2026* · [OpenReview](https://openreview.net/forum?id=U2fY7u10QY)
 
-<p align="center"><img src="assets/fig1.jpg" width="95%"></p>
+<p align="center"><img src="assets/fig1.PNG" width="95%"></p>
 
 ## Abstract
 
