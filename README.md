@@ -50,13 +50,6 @@ Use `--model flux` for FLUX.1-dev. Controls can be set per run: `--t0` (editing 
 
 By default every output carries an invisible watermark (see below); add `--no-watermark` to disable it.
 
-## Demo
-
-```bash
-python demo.py
-```
-
-Launches a local Gradio interface.
 
 ## Watermarking and use
 
