@@ -30,10 +30,10 @@ huggingface-cli login   # required to download SD3 and FLUX.1-dev weights
 The eight edits shown in Figure 1 are predefined. Pick one and run it by name:
 
 ```bash
-python edit.py --edit bear_moose --output bear_moose.png
+python edit.py --edit goat_puppy --output goat_puppy.png
 ```
 
-Available edits: `woman_puppy`, `statue_photoreal`, `bear_moose`, `empire_eiffel` (FLUX.1-dev) and `open_home`, `cheetahs_tigers`, `tomatoes_golf`, `van_jeep` (SD3).
+Available edits: `goat_puppy`, `statue_photoreal`, `bear_moose`, `empire_eiffel` (FLUX.1-dev) and `open_home`, `cheetahs_tigers`, `tomatoes_golf`, `van_jeep` (SD3).
 
 ### Editing your own image
 
