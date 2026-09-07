@@ -30,7 +30,7 @@ EDITS = {
     "goat_puppy":    {"model": "flux", "image": "examples/woman.png",
                        "source": "A young woman tenderly cradles a baby goat in a pastoral setting.",
                        "target": "A young woman tenderly cradles a puppy in a pastoral setting.",
-                       "gamma": 4.5},
+                       "gamma": 4.7},
     "statue_photoreal": {"model": "flux", "image": "examples/statue.png",
                        "source": "A bronze sculpture depicts a young boy with his dog on his lap, sharing a moment with a curious cat.",
                        "target": "A photograph depicts a real young boy with his dog on his lap, sharing a moment with a curious cat.",
