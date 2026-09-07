@@ -4,7 +4,7 @@
 
 *Transactions on Machine Learning Research (TMLR), 2026* · [OpenReview](https://openreview.net/forum?id=U2fY7u10QY)
 
-<p align="center"><img src="assets/fig1.png" width="95%"></p>
+<p align="center"><img src="assets/fig1.jpg" width="95%"></p>
 
 ## Abstract
 
@@ -12,7 +12,7 @@ Rectified flow and diffusion-based models currently represent the state-of-the-a
 
 ## Key insight
 
-<p align="center"><img src="assets/fig2.png" width="85%"></p>
+<p align="center"><img src="assets/fig2.jpg" width="85%"></p>
 
 The editing trajectory is projected onto a degraded representation of its own recent motion, obtained by Gaussian structural smoothing and dynamic range reduction. Directions suppressed by this representation are attenuated with a weight that decays along the trajectory. See Section 3 of the paper.
 
@@ -49,7 +49,6 @@ python edit.py \
 Use `--model flux` for FLUX.1-dev. Controls can be set per run: `--t0` (editing strength), `--steps`, `--seed`, `--res`.
 
 By default every output carries an invisible watermark (see below); add `--no-watermark` to disable it.
-
 
 ## Watermarking and use
 
