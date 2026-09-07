@@ -8,7 +8,7 @@
 
 ## Abstract
 
-Rectified flow and diffusion-based models currently represent the state-of-the-art in image editing. Despite their impressive capabilities, maintaining faithfulness to the source image — preserving structure and photometric characteristics while satisfying a target prompt — remains a persistent challenge. We propose an optimization- and inversion-free editing framework for rectified flow models (SD3, FLUX.1-dev) that constrains editing trajectories by projecting them onto a degraded representation, suppressing unfaithful trajectory deviations while preserving the flexibility required to satisfy the target prompt.
+Rectified flow and diffusion-based models currently represent the state-of-the-art in image editing. Despite their impressive capabilities, maintaining faithfulness to the source image, that is, preserving structure and photometric characteristics while satisfying a target prompt, remains a persistent challenge. We propose an optimization- and inversion-free editing framework for rectified flow models (SD3, FLUX.1-dev) that constrains editing trajectories by projecting them onto a degraded representation, suppressing unfaithful trajectory deviations while preserving the flexibility required to satisfy the target prompt.
 
 ## Key insight
 
