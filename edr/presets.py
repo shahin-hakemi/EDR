@@ -17,7 +17,7 @@ BACKBONES = {
     },
     "flux": {
         "model_id": "black-forest-labs/FLUX.1-dev",
-        "gamma": 5.0, "sigma": 5.0, "i_min": 0.25, "i_max": 0.75,
+        "gamma": 5.0, "sigma": 5.0, "i_min": 0.25, "i_max": 0.75, "seed": 0,
         "src_guidance": 1.5, "tar_guidance": 5.5,
         "steps": 28, "t0": 0.9, "res": 1024,
     },
