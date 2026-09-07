@@ -27,7 +27,7 @@ BACKBONES = {
 # Optional per-edit overrides: t0, sigma, steps, seed, i_min, i_max, res.
 #   e.g.  "bear_moose": {..., "t0": 0.85, "sigma": 7.0},
 EDITS = {
-    "woman_puppy":    {"model": "flux", "image": "examples/woman.png",
+    "goat_puppy":    {"model": "flux", "image": "examples/woman.png",
                        "source": "A young woman tenderly cradles a baby goat in a pastoral setting.",
                        "target": "A young woman tenderly cradles a puppy in a pastoral setting.",
                        "gamma": 1},
